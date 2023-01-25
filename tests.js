@@ -13,3 +13,12 @@ describe('helloWorld', function() {
       expect(helloWorld()).not.toBe(undefined);
     });
 });
+
+// Open up tests.js. Add a describe, an it, and an expect to assert that sayHello is a defined function
+describe('sayHello', function() {
+    it('should be a defined function', function () {
+        expect(typeof sayHello).toBe('function');
+    });
+
+
+})
