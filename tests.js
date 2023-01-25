@@ -15,10 +15,14 @@ describe('helloWorld', function() {
 });
 
 // Open up tests.js. Add a describe, an it, and an expect to assert that sayHello is a defined function
+// Inside of tests.js, add an assertion to sayHello that it "should return a string when called.". The test should look similar to expect(typeof sayHello()).toBe("string")
+//
 describe('sayHello', function() {
     it('should be a defined function', function () {
         expect(typeof sayHello).toBe('function');
     });
-
+    it('should return a string when called', function() {
+        expect(typeof sayHello()).toBe("string");
+    });
 
 })
